@@ -35,8 +35,7 @@ document.querySelector('#book-card').addEventListener('submit', (e) => {
     ui.clearFields();
     store.addBooks(book);
   } else {
-    // eslint-disable-next-line no-alert
-    alert('Please fill inputs');
+    // alert('Please fill inputs');
   }
 });
 // EVENT DELETE
