@@ -1,166 +1,163 @@
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-body {
-  width: 100%;
-}
-
-.navigation {
-  padding: 1rem;
-  border: 2px solid black;
-  margin: 0.5rem;
-}
-
-.navigation > ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.spacer {
-  flex: 1 1 auto;
-}
-
-.navigation > ul li {
-  list-style: none;
-}
-
-.added-book ul li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 1rem;
-  align-items: center;
-  padding: 0.5rem;
-}
-
-.navigation > ul li:not(:first-child) {
-  margin-left: 1rem;
-  border-right: 2px solid black;
-  padding-right: 1rem;
-}
-
-.navigation > ul li:last-child {
-  border-right: none;
-  padding-right: 0;
-}
-
-.navigation > ul li a {
-  text-decoration: none;
-  color: black;
-}
-
-.time > p {
-  float: right;
-  margin-right: 0.5rem;
-}
-
-.book {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  align-items: center;
-  gap: 1rem;
-  padding: 3rem;
-
-  /* margin-top: 2rem; */
-}
-
-.book hr {
-  fill: black;
-  background-color: black;
-  height: 4px;
-  width: 100px;
-}
-
-.added-book {
-  width: 100%;
-}
-
-.added-book h1 {
+.awesomeBooks {
   text-align: center;
-  margin-bottom: 0.6rem;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  font-family: sans-serif;
 }
 
-.added-book ul {
-  border: 2px solid black;
-  padding: 1rem 0;
-  width: 70vw;
+.bookDisplay {
+  border: 2px solid #111;
+  width: 80%;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+.newDiv:nth-child(odd) {
+  background-color: #eee;
+}
+
+.formHeader {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+#book-card {
+  width: 40%;
   margin: auto;
 }
 
-.form-container button {
-  float: right;
-  padding: 0.25em 1em;
-}
-
-.added-book ul li > h2 {
-  font-size: 14px;
-}
-
-.added-book ul li > button {
-  padding: 0.5rem;
-  margin-right: 0.5rem;
-}
-
-.added-book ul li:nth-child(2n + 1) {
-  background-color: grey;
-}
-
-.form-container {
-  display: flex;
-  flex-direction: column;
+#author {
   width: 100%;
+  padding: 3px;
+}
+
+#title {
+  width: 100%;
+  padding: 3px;
+}
+
+.but {
+  display: flex;
+  justify-content: right;
+}
+
+#add {
+  padding: 5px;
+  box-shadow: #1c1c1c 2px 2px;
+}
+
+.hidey {
+  display: none;
+}
+
+.flexIt {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px 10px;
 }
 
-.form-container > h1 {
-  margin-bottom: 0.6rem;
+.remove {
+  padding: 4px;
+  box-shadow: #1c1c1c 3px 3px;
 }
 
-form > * {
-  border: 2px solid black;
+.navLists {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 600;
+  gap: 20px;
+  cursor: pointer;
 }
 
-form > input {
-  width: 40vw;
-  padding: 0.5em;
+.list:nth-child(1) {
+  border-right: 2px solid #111;
+  width: 40px;
 }
 
-.button-shadow {
-  box-shadow: 3px 4px;
+.list:nth-child(2) {
+  border-right: 2px solid #111;
+  width: 70px;
 }
 
-.added-book h3 {
+.nav {
+  width: 80%;
+  margin: auto;
+}
+
+.navDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  border: 2px solid #111;
+  padding: 5px;
+}
+
+.navHeader {
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+.contactUs {
+  display: none;
+  width: 50%;
+  margin: auto;
+}
+
+.contactUsHeader {
   text-align: center;
-  width: 30vw;
-  margin: 0 auto;
-  color: red;
-  animation: zoom-in-zoom-out 1s ease-out infinite;
+  font-family: sans-serif;
+  font-size: 26px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-@keyframes zoom-in-zoom-out {
-  0% {
-    transform: scale(1, 1);
-  }
-
-  50% {
-    transform: scale(1.5, 1.5);
-  }
-
-  100% {
-    transform: scale(1, 1);
-  }
+.contactUsParagraph {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
-.footer {
-  position: fixed;
-  bottom: 0.5rem;
-  margin: 0 0.5rem 0 0.5rem;
-  border: 2px solid black;
-  width: calc(100% - 16px);
-  padding: 1rem;
+.contactDiv {
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.contactUsUl {
+  list-style-type: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.foot {
+  width: 90%;
+  margin: auto;
+  border: 2px solid #111;
+}
+
+.footerHead {
+  padding-left: 10px;
 }

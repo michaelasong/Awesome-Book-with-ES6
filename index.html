@@ -5,51 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Books</title>
-    <link rel="stylesheet" href="./index.css">
+    <title>AWESOME-BOOKS-ES6</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <section class="navigation">
-        <ul>
-            <li>Awesome Books</li>
-            <span class="spacer"></span>
-            <li><a href="/">List</a></li>
-            <li><a href="/">Add New</a></li>
-            <li><a href="/">Contact</a></li>
-        </ul>
-    </section>
-    <div class="time">
-        <p>March 12th 2023, 9:24:32 am</p>
-    </div>
-    <section class="book">
-        <div class="added-book">
-            <h1 class="top-title">Awesome Books</h1>
-            <ul id="awesome-books">
+    <nav class="nav">
+        <div class="navDiv">
+            <div class="navHeader">Awesome Books</div>
+            <ul class="navLists">
+                <li class="list lists">Lists</li>
+                <li class="list addNew">Add New</li>
+                <li class="list contact">Contact</li>
             </ul>
-            <h3 id="no-book">No Available Books !</h3>
-
         </div>
-
-        <hr>
-        <div class="form-container">
-            <h1>Add a new book</h1>
-            <form action="">
-                <input type="text" name="title" id="title" placeholder="Title">
-                <br>
-                <br>
-                <input type="text" name="author" id="author" placeholder="Author">
-                <br>
-                <br>
-                <button class="button-shadow" type="submit">Add</button>
-            </form>
+        <div class="date-time">
+            <h3 class="date"></h3>
         </div>
-    </section>
-    <section class="footer">
-        <Copyright class="copyr">Copyright...</Copyright>
-    </section>
-    <script src="./index.js"></script>
+    </nav>
 
+    <div>
+        <h1 class="awesomeBooks">Awesome Books</h1>
+    </div>
+
+    <div class="bookDisplay">
+
+    </div>
+
+
+    <form id="book-card" action="#">
+        <h2 class="formHeader">Add a new book</h2>
+        <input id="title" type="text" placeholder="Title"> <br><br>
+        <input id="author" type="text" placeholder="Author"><br><br>
+        <div class="but">
+            <button id="add" type="submit"> Add </button>
+        </div>
+    </form>
+
+    <section class="contactUs">
+    </section>
+
+    <footer>
+        <div class="foot">
+            <h2 class="footerHead">&copy;
+                Copyright 2022, Michael.A
+            </h2>
+        </div>
+    </footer>
+    <script src="index.js" type="module"></script>
 </body>
 
 </html>
